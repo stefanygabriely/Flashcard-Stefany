@@ -13,6 +13,7 @@ body{
 
 #container{
     display: flex; /*transforma em elemento flexível*/
+    flex-wrap:wrap ;
 }
 
 .cartao{
