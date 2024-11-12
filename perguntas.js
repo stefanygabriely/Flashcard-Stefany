@@ -2,7 +2,7 @@ criaCartao()
 
 
 criaCartao(
-    categoria,
+    programcao,
     pergunta,
     resposta,
 )

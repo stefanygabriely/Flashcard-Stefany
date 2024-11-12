@@ -12,62 +12,60 @@ body{
 }
 
 #container{
-    display: flex; /*transforma em elemento flexível*/
+    display: flex; 
     flex-wrap:wrap ;
 }
 
 .cartao{
-    margin: 1rem 1rem; /*espaço externo 1rem p/ todos os lados*/
-    height: 20rem; /*altura elemento 20rem*/
-    flex-grow: 1; /*cresce os elementos de maneira uniforme*/
-    flex-basis: calc(33% - 6rem); /*divide o espaço p/ 3 elementos*/
+    margin: 1rem 1rem; 
+    height: 20rem; 
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
 }
 .cartao__conteudo{
     background-color: var(--card-front-color);
-    text-align: center; /*alinhamento texto ao centro*/
-    height: 100%; /*altura da div em 100%*/
-    transform-style: preserve-3d; /*estilo da transformação:
-    preservar3dimensões*/
-    transition: transform 300ms ease-in-out;
-    /*transição de 300milisegundos de fácil percepção*/
+    text-align: center; 
+    height: 100%; 
+    transform-style: preserve-3d;
+    preservar3dimensões
+    transition:transform 300ms ease-in-out;
+   
 }
 
-.cartao__conteudo h3{ /*estilo do titulo do cartao*/
-    color: var(--text-color);/*COR DO TEXTO*/
+.cartao__conteudo h3{ 
+    color: var(--text-color);
     border: 1px solid var(--text-color);
-    /*BORDA:1PIXEL TIPO SÓLIDA COR TIRADA DA VARIAVEL DE TEXTO*/
-    text-align: left; /*texto alinhado à esquerda*/
-    padding: 0.5rem;  /*espaço interno de 0.5 raiz*/
-    position: absolute; /*posiciona o titulo em relação ao "pai"*/
-    margin: 0.6rem;  /*margem externa de 0.6 raiz*/
-    border-radius: 0.6rem;  /*borda arredondada de 0.6 raiz*/
-    font-size: 1vw; /*tamanho letra do titulo, 1% largura raiz*/
+    text-align: left; 
+    position: absolute; 
+    margin: 0.6rem; 
+    border-radius: 0.6rem;  
+    font-size: 1vw; 
     backface-visibility: hidden;
-    /*visibilidade do verso do elemento: oculto*/
+    
 }
 .cartao__conteudo p{
-    margin-top: 1rem; /*MARGEM EXTERNA SUPERIOR DE 1REM*/
-    padding: 2rem; /*ESPAÇO INTERNO DO ELEMENTO DE 2REM*/
-    margin-top: 4rem; /*MARGEM EXTERNA SUPERIOR DE 1REM*/
+    margin-top: 1rem; 
+    padding: 2rem; 
+    margin-top: 4rem; 
 }
-
 .cartao__conteudo__pergunta p{
     color: var(--text-color);
-    font-weight: 500; /*ESPESSURA DA LETRA, 500*/
+    font-weight: 500; 
 }
 .cartao__conteudo__resposta p{
     color: var(--card-back-color);
-    font-weight: 700; /*ESPESSURA DA LETRA, 700*/
+    font-weight: 700; 
 }
-.cartao:hover .cartao__conteudo{
-    /*PSEUDOCLASSE HOVER, IDENTIFICA O ARRASTO DO MOUSE*/
+
+.cartao:active .cartao__conteudo{
+    
     transform: rotateY(180deg);
-    /* Transformando a rotação no eixoY em 180graus*/
+    
 }
 
 .cartao__conteudo__pergunta,
 .cartao__conteudo__resposta{
-    backface-visibility: hidden; /*ELEMENTOS FICAM OCULTOS*/
+    backface-visibility: hidden;
     position: absolute;
     height: 100%;
     width: 100%;
